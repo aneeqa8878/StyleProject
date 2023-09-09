@@ -3,7 +3,7 @@ import React from 'react'
 function Kids() {
   return (
     <div>
-      <h1>kids dress</h1>
+      <h1>Arslan Akmal</h1>
     </div>
   )
 }
