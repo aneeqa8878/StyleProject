@@ -8,8 +8,10 @@ function Navbar() {
   return (
     <div class="row">
   <div class="col  text-center">
+  <Link class="" to="/">
   <img src='https://stylo.pk/cdn/shop/files/Logo-200X100_6f449994-79a7-467d-95c6-ac0903ba695d_140x.png?v=1646139171' 
       width={100} height={60}/>
+      </Link>
      
 
 <div className='navbar-nav flex-row-reverse bd-highlight'>

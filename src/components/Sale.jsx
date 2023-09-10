@@ -106,7 +106,7 @@ function Sale() {
         {data.map((item) => {
           return (
             <div class="card" style={{ width: "15rem" }}>
-              <img src={item.image} alt="Card image cap" height={"300px"} width={"300px"} />
+              <img src={item.image} alt="Card image cap" height={"320px"} width={"256px"} />
               <div class="cover">
                 <button class="btn btn-light ml-5">
                   <span>Quick View</span>

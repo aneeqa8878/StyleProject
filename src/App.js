@@ -13,6 +13,8 @@ import Accessories from "./components/Accessories";
 import Beauty from "./components/Beauty";
 import Sale from "./components/Sale";
 import Parent from "./components/Parent";
+import Dress from "./components/Dress";
+
 
 
 
@@ -33,6 +35,7 @@ function App() {
       <Route path="/" element={<Slider/>}></Route>
       <Route path="/sale" element={<Sale/>}></Route>
       <Route path="/cards" element={<Cards/>}></Route>
+      <Route path="/dress" element={<Dress/>}></Route>
       <Route path="/bags" element={<Bags/>}></Route>
       <Route path="/womenshoes" element={<WomenShoes/>}></Route>
       <Route path="/womenapparels" element={<WomenApparels/>}></Route>

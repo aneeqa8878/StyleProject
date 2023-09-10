@@ -105,7 +105,7 @@ function WomenApparels() {
         {data.map((item) => {
           return (
             <div class="card" style={{ width: "15rem" }}>
-              <img src={item.image} alt="Card image cap" width={"255px"} height={"300px"} />
+              <img src={item.image} alt="Card image cap" width={"255px"} height={"320px"} />
               <div class="cover">
                 <button class="btn btn-light ml-5">
                   <span>Quick View</span>
