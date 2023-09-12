@@ -24,6 +24,8 @@ import Dress from "./components/Dress";
 
 
 
+
+
 function App() {
   return (
     <>
@@ -43,6 +45,7 @@ function App() {
       <Route path="/accessories" element={<Accessories/>}></Route>
       <Route path="/beauty" element={<Beauty/>}></Route>
       <Route path="/parent" element={<Parent/>}></Route>
+      
     
      
       
