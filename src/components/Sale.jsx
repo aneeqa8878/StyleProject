@@ -119,7 +119,7 @@ function Sale() {
               <div class="text-block2">
                 <h6>{item.title1}</h6>
               </div>
-              <h5 class="card-title fs-6 w-10">{item.title2}</h5>
+              <h5 class="card-title fs-6 w-10 text-center mt-2">{item.title2}</h5>
               <p class="card-text text-center">
                 <del style={{ color: "gray" }}>{item.price1}</del>{" "}
                 <emb style={{ color: "red" }}>{item.price2}</emb>

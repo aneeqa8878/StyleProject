@@ -61,9 +61,7 @@ function Navbar() {
         <li class="nav-item">
           <Link class="nav-link" to="/beauty"><b>Beauty</b></Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/parent"><b>Parent</b></Link>
-        </li>
+        
         </ul>
 </div>
 </div>

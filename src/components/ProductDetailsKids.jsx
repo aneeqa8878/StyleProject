@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
-import { shoes } from "./WomenShoesData";
 import { useParams } from "react-router-dom";
+import { kids } from "./kidsData";
 
 
-function ProductDetails() {
-  const [product, setProduct] = useState({});
+function ProductDetailsKids() {
+    const [product, setProduct] = useState({});
 
-  const params = useParams();
-  useEffect(() => {
-    const data = shoes.filter((selected) => selected.id == params.id);
-    setProduct(data[0]);
-  }, []);
+    const params = useParams();
+    useEffect(() => {
+      const data = kids.filter((selected) => selected.id == params.id);
+      setProduct(data[0]);
+    }, []);
   return (
     <div>
-      <div className="container mt-2">
+        <div className="container mt-2">
         <div className="row">
           <div className="col-lg-6 text-center">
-            <img src={product.image} height="400px" width="400px" />
+            <img src={product.image} height="500px" width="500px" />
           </div>
           <div className="col-lg-4">
             <h2>{product.articleName}</h2>
@@ -41,7 +41,7 @@ function ProductDetails() {
             <span class="plus">+</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="button" class="button">
-              <b> + Add to Bag </b>
+              <b> + Add to Cart </b>
             </button>
             <br />
             <br />
@@ -56,7 +56,7 @@ function ProductDetails() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ProductDetails;
+export default ProductDetailsKids

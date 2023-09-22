@@ -24,16 +24,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
-
-
 .card{
   border: none;
   
 }
-
-
 .container {
   position: relative;
   font-family: Arial;
@@ -41,8 +35,8 @@ body {
 
 .text-block {
   position: absolute;
-  bottom:250px;
-  right: 0px;
+  bottom:260px;
+  left: 198px;
   background-color: rgb(252, 80, 80);
   color: white;
   justify-content: center;
@@ -52,20 +46,21 @@ body {
 }
 .text-block1 {
   position: absolute;
-  bottom:380px;
-  right: 0px;
+  bottom:349px;
+  left: 198px;
+  
   background-color: rgb(252, 80, 80);
   color: white;
   justify-content: center;
   text-align: center;
-  padding-top: 2px;
+
   padding-left: 10px;
   padding-right: 10px;
 }
 .text-block2 {
   position: absolute;
-  bottom:350px;
-  right: 0px;
+  bottom:339px;
+  left: 199px;
   
   background-color: rgb(252, 80, 80);
   color: white;
@@ -78,7 +73,6 @@ body {
 .card {
   margin-bottom:30px;
 }
-
 .card .cover {
   position:absolute;
   top:0;
@@ -92,7 +86,6 @@ body {
   color:#fff;
   
 }
-
 .card:hover .cover {
   opacity:1;
 }
@@ -122,6 +115,20 @@ span{
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
+.button{
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 30px;
+ 
+  font-size: 15px;
+  background-color:#970f3c;
+  cursor: pointer;
+  position: relative;
+  color:white
+}
+
 
 
 

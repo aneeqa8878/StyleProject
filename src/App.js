@@ -14,14 +14,13 @@ import Beauty from "./components/Beauty";
 import Sale from "./components/Sale";
 import Parent from "./components/Parent";
 import Dress from "./components/Dress";
+import ProductDetails from "./components/ProductDetails";
+import ProductDetailsApparels from "./components/ProductDetailsApparels";
+import ProductDetailsBags from "./ProductDetailsBags";
 
-
-
-
-
-
-
-
+import ProductDetailsKids from "./components/ProductDetailsKids";
+import ProductDetailsAccessories from './components/ProductDetailsAccessories';
+import ProductDetailsBeauty from './components/ProductDetailsBeauty';
 
 
 
@@ -29,10 +28,8 @@ import Dress from "./components/Dress";
 function App() {
   return (
     <>
-   
       <Prenav/>
       <Navbar/>
-
       <Routes>
       <Route path="/" element={<Slider/>}></Route>
       <Route path="/sale" element={<Sale/>}></Route>
@@ -45,6 +42,13 @@ function App() {
       <Route path="/accessories" element={<Accessories/>}></Route>
       <Route path="/beauty" element={<Beauty/>}></Route>
       <Route path="/parent" element={<Parent/>}></Route>
+      <Route path="/womenshoes/:id" element={<ProductDetails/>}></Route>
+      <Route path="/womenapparels/:id" element={<ProductDetailsApparels/>}></Route>
+      <Route path="/bags/:id" element={<ProductDetailsBags/>}></Route>
+      <Route path="/kids/:id" element={<ProductDetailsKids/>}></Route>
+      <Route path="/accessories/:id" element={<ProductDetailsAccessories/>}></Route>
+      <Route path="/beauty/:id" element={<ProductDetailsBeauty/>}></Route>
+   
       
     
      
