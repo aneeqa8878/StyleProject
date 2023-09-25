@@ -17,10 +17,18 @@ import Dress from "./components/Dress";
 import ProductDetails from "./components/ProductDetails";
 import ProductDetailsApparels from "./components/ProductDetailsApparels";
 import ProductDetailsBags from "./ProductDetailsBags";
-
 import ProductDetailsKids from "./components/ProductDetailsKids";
 import ProductDetailsAccessories from './components/ProductDetailsAccessories';
 import ProductDetailsBeauty from './components/ProductDetailsBeauty';
+import ContactUs from "./components/ContactUs";
+
+
+
+
+
+
+
+
 
 
 
@@ -30,6 +38,7 @@ function App() {
     <>
       <Prenav/>
       <Navbar/>
+
       <Routes>
       <Route path="/" element={<Slider/>}></Route>
       <Route path="/sale" element={<Sale/>}></Route>
@@ -48,6 +57,12 @@ function App() {
       <Route path="/kids/:id" element={<ProductDetailsKids/>}></Route>
       <Route path="/accessories/:id" element={<ProductDetailsAccessories/>}></Route>
       <Route path="/beauty/:id" element={<ProductDetailsBeauty/>}></Route>
+      <Route path="/contactus" element={<ContactUs/>}></Route>
+      
+
+     
+     
+      
    
       
     

@@ -61,6 +61,9 @@ function Navbar() {
         <li class="nav-item">
           <Link class="nav-link" to="/beauty"><b>Beauty</b></Link>
         </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="/contactus"><b>Contact Us</b></Link>
+        </li>
         
         </ul>
 </div>

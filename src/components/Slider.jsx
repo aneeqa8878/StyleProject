@@ -14,7 +14,6 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 
-
 function Slider() {
   return (
     <div className="container">
@@ -41,7 +40,7 @@ function Slider() {
                     style={{ width: "5rem" }}
                   />
                   <Link class="nav-link mt-2" to="/sale">
-                    View All
+                    <h6>View All</h6>
                   </Link>
                 </Link>
               </SwiperSlide>

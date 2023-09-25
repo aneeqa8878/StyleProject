@@ -41,7 +41,7 @@ function ProductDetails() {
             <span class="plus">+</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="button" class="button">
-              <b> + Add to Bag </b>
+              <b> + Add to Cart </b>
             </button>
             <br />
             <br />

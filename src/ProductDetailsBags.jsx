@@ -4,6 +4,8 @@ import { bags } from "./BagsData";
 
 
 
+
+
 function ProductDetailsBags() {
     const [product, setProduct] = useState({});
 
@@ -44,7 +46,7 @@ function ProductDetailsBags() {
             <span class="plus">+</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="button" class="button">
-              <b> + Add to Bag </b>
+              <b> + Add to Cart </b>
             </button>
             <br />
             <br />
