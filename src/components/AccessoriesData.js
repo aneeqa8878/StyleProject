@@ -36,7 +36,7 @@ export const accessories=[
         image:
           "https://stylo.pk/cdn/shop/products/J3314315_2_720x.jpg?v=1690963116",
           discountedPercen: "-31%",
-          articleName: "Girls White Formal Moccasin FR4981",
+          articleName: "Anklet- K6012090",
           originalPrice: "Rs4,500",
           discountedPrice: "Rs1,415",
           description:"Accessories are often chosen to complement an outfit, adding a finishing touch or a pop of color. They have the power to transform a basic ensemble into a stylish and personalized look.          "
@@ -46,7 +46,7 @@ export const accessories=[
         image:
           "https://stylo.pk/cdn/shop/products/M0001102_2_720x.jpg?v=1690806958",
           discountedPercen: "-31%",
-          articleName: "Girls Golden Formal Moccasin KD4881",
+          articleName: "Girls Golden kit KD4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
           description:"Accessories are items that are used to complement and enhance one's overall style, outfit, or appearance"
@@ -56,7 +56,7 @@ export const accessories=[
         image:
           "https://stylo.pk/cdn/shop/products/M0000902_3_720x.jpg?v=1690806952",
           discountedPercen: "-38%",
-          articleName: "Black Casual Kids Bag PG1373",
+          articleName: "Black Shoes Polish PG1373",
           originalPrice: "Rs1,500",
           discountedPrice: "Rs 800",
           description:"Accessories are often chosen to complement an outfit, adding a finishing touch or a pop of color. They have the power to transform a basic ensemble into a stylish and personalized look.          "
