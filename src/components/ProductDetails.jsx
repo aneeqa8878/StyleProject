@@ -1,9 +1,37 @@
 import { useState, useEffect } from "react";
 import { shoes } from "./WomenShoesData";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+
+
 
 
 function ProductDetails() {
+  
+ 
+  const [count, setCount] = useState(0);
+
+  const add = () => {
+    if (count >= 10) {
+      toast.dark("you cannot enter more than 10");
+      //setDress((dress)+1);
+      setCount(10);
+    } else {
+      setCount(count + 1);
+    }
+    //setDress(dress+1)
+  };
+
+  const subtract = () => {
+    if (count <= 10) {
+      toast.dark("you cannot enter less than 0");
+      //setDress((dress)-1);
+      setCount(0);
+    } else {
+      setCount(count - 1);
+    }
+    //  setDress(dress-1)
+  };
   const [product, setProduct] = useState({});
 
   const params = useParams();
@@ -27,7 +55,7 @@ function ProductDetails() {
               <del>{product.originalPrice}</del>&nbsp; &nbsp;
               <ins style={{ color: "red" }}>{product.discountedPrice}</ins>{" "}
             </p>
-            
+
             <small style={{ color: "darkslategrey" }}>
               Availability: <i style={{ color: "green" }}>In stock</i>
             </small>
@@ -35,22 +63,29 @@ function ProductDetails() {
             <small style={{ color: "darkslategrey" }}>SKU: BLK22420</small>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="minus">-</span>
-            <span class="num">1</span>
-            <span class="plus">+</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="button">
-              <b> + Add to Cart </b>
-            </button>
+            <div className="d-flex">
+              <button className="btn btn-danger mx-1 my-3" onClick={add}>
+                +
+              </button>
+              <h1 className="mx-1 my-3">{count}</h1>
+              <button className="btn btn-primary mx-3 my-3" onClick={subtract}>
+                -
+              </button>
+  
+              <Link
+                  type="button" className="button mt-4 pl-2"
+                  to={`/modal`}
+                >
+                  <b>+ Add to Cart</b>
+                </Link>
+             
+            </div>
             <br />
-            <br />
-            <br />
+
             <emb style={{ color: "darkslategrey" }}>Details</emb>
             <hr />
-            <emb style={{ color: "darkslategrey" }}>{product. description}</emb>
-            
-            
+            <emb style={{ color: "darkslategrey" }}>{product.description}</emb>
+
             <br />
           </div>
         </div>

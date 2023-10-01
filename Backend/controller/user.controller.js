@@ -5,7 +5,7 @@ exports.store=async(req,res)=>{
    try{
     const payload=req.body;
     const user=await User.create(payload)
-    res.json({message:"User Created Successfully", username:"Ayesha", city:"Shiekhupura", Subject:"Good Products", status:200,user})
+    res.json({message:"User Created Successfully",status:200,user})
    }
    catch(err){
  console.log(err)
@@ -13,7 +13,7 @@ exports.store=async(req,res)=>{
 }
 exports.index=async(req,res)=>{
     try{
-const users=await User.find();
+const users=await User.find().sort({createdAt:-1});
 res.json({status:200,message:"Data Fetched Successfully",users})
     }
     catch(err){

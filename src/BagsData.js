@@ -7,6 +7,7 @@ export const bags=[
           articleName: "Maroon Bridal Clutch FR4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
           
       },
       {
@@ -17,6 +18,8 @@ export const bags=[
           articleName: "Black Bridal Clutch FR7883",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:3,
@@ -26,6 +29,8 @@ export const bags=[
           articleName: "Silver Bridal Clutch FR5117",
           originalPrice: "Rs4,500",
           discountedPrice: "Rs2,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:4,
@@ -35,6 +40,8 @@ export const bags=[
           articleName: "Golden bridal Clutch FR4981",
           originalPrice: "Rs2,500",
           discountedPrice: "Rs1,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:5,
@@ -44,6 +51,8 @@ export const bags=[
           articleName: "Champagne Bridal Clutch FR4881",
           originalPrice: "Rs5,500",
           discountedPrice: "Rs3,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:6,
@@ -53,6 +62,8 @@ export const bags=[
           articleName: "Silver Bridal Clutch CL1373",
           originalPrice: "Rs1,500",
           discountedPrice: "Rs 800",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:7,
@@ -62,6 +73,8 @@ export const bags=[
           articleName: "Golden Bridal Clutch FR7910",
           originalPrice: "Rs2,500",
           discountedPrice: "Rs1,715",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:8,
@@ -71,6 +84,8 @@ export const bags=[
           articleName: "Silver Bridal Clutch FR4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:9,
@@ -80,6 +95,8 @@ export const bags=[
           articleName: "Maroon Casual Pouch FR7886",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,208",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:10,
@@ -89,6 +106,8 @@ export const bags=[
           articleName: "Pink Casual Pouch FR4981",
           originalPrice: "Rs2,800",
           discountedPrice: "Rs1,915",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:11,
@@ -98,6 +117,8 @@ export const bags=[
           articleName: "Yellow Casual Pouch FR7910",
           originalPrice: "Rs2,500",
           discountedPrice: "Rs1,415",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
       {
         id:12,
@@ -107,6 +128,8 @@ export const bags=[
           articleName: "Maroon Casual Pouch FR7886",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs 2,250",
+          description:"Ladies bag color although having a lot of hues mainly range in black and brown, or classic patterns so that a handbag can be taken out for more than one occasion"
+
       },
 
 ]

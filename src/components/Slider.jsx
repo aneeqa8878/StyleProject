@@ -13,6 +13,10 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
+import WomenShoes from './WomenShoes';
+import WomenApparels from './WomenApparels';
+import Accessories from './Accessories';
+import Beauty from './Beauty';
 
 function Slider() {
   return (
@@ -126,6 +130,19 @@ function Slider() {
             </div>
           </Swiper>
         </div>
+        <div class="dropdown">
+  <button class="btn btn-gray dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filter/Features
+  </button>
+  <div class="dropdown-menu">
+  <Link class="nav-link mt-2  pl-3" to="/womenshoes">WomenShoes</Link>
+  <Link class="nav-link mt-2  pl-3" to="/womenapparels">WomenApparels</Link>
+  <Link class="nav-link mt-2  pl-3" to="/bags">Bags</Link>
+  <Link class="nav-link mt-2  pl-3" to="/kids">Kids</Link>
+  <Link class="nav-link mt-2  pl-3" to="/Accessories">Accessories</Link>
+  <Link class="nav-link mt-2  pl-3" to="/beauty">Beauty</Link>
+  </div>
+</div>
         <p className="pl-0 mt-5 text-center " style={{ color: "gray" }}>
           Stylo Pakistan brings to you Women Shoes that are not only top-quality
           in terms of design, but also fit comfort standards. Explore our wide
@@ -135,6 +152,7 @@ function Slider() {
           look at are either good at design or comfort.{" "}
         </p>
       </div>
+
     </div>
   );
 }

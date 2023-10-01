@@ -1,6 +1,39 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { toast} from 'react-toastify';
+
 
 function Dress() {
+  const [dress, setDress]=useState(0);
+    
+  const add=()=>{
+      if(dress>=10)
+  {
+      toast.dark("you cannot enter more than 10")
+  //setDress((dress)+1);
+  setDress(10)
+
+  }
+  else{
+      setDress(dress+1);
+  }
+ //setDress(dress+1)
+ 
+  }
+
+  const subtract=()=>{
+      if(dress<=10)
+      {
+          toast.dark("you cannot enter less than 0")
+      //setDress((dress)-1);
+      setDress(0)
+  
+      }
+      else{
+          setDress(dress-1);
+      }
+    //  setDress(dress-1)
+
+    }
   return (
     <div>
        <div class="container1">
@@ -25,13 +58,11 @@ width={"450px"} height={"600px"}/>
 <small style={{color:'darkslategrey'}}>SKU: BLK22420</small>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<span class="minus">-</span>
-<span class="num">1</span>
-<span class="plus">+</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button type="button" class="button">
-<b> + Add to Cart </b>
-</button>
+<div className='d-flex'>
+      <button className='btn btn-danger' onClick={add}>+</button>
+      <button className='btn btn-primary' onClick={subtract}>-</button>
+    </div>
+
 <br/><br/><br/>
    
 <emb style={{color:'darkslategrey'}}>Details</emb>

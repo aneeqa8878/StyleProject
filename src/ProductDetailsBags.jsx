@@ -1,12 +1,44 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { bags } from "./BagsData";
+import { toast} from 'react-toastify';
 
 
 
 
 
 function ProductDetailsBags() {
+  const [count, setCount]=useState(0);
+    
+  const add=()=>{
+      if(count>=10)
+  {
+      toast.dark("you cannot enter more than 10")
+  //setDress((dress)+1);
+  setCount(10)
+
+  }
+  else{
+      setCount(count+1);
+  }
+ //setDress(dress+1)
+ 
+  }
+
+  const subtract=()=>{
+      if(count<=10)
+      {
+          toast.dark("you cannot enter less than 0")
+      //setDress((dress)-1);
+      setCount(0)
+  
+      }
+      else{
+          setCount(count-1);
+      }
+    //  setDress(dress-1)
+
+    }
     const [product, setProduct] = useState({});
 
     const params = useParams();
@@ -40,17 +72,16 @@ function ProductDetailsBags() {
             <small style={{ color: "darkslategrey" }}>SKU: BLK22420</small>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="minus">-</span>
-            <span class="num">1</span>
-            <span class="plus">+</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="button">
+            <div className='d-flex'>
+      <button className='btn btn-danger mx-1 my-3' onClick={add}>+</button>
+      <h1 className="mx-1 my-3">{count}</h1>
+      <button className='btn btn-primary mx-3 my-3' onClick={subtract}>-</button>
+      <button type="button" class="button">
               <b> + Add to Cart </b>
             </button>
+    </div>
             <br />
-            <br />
-            <br />
+           
             <emb style={{ color: "darkslategrey" }}>Details</emb>
             <hr />
             <emb style={{ color: "darkslategrey" }}>{product. description}</emb>

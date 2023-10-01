@@ -7,7 +7,7 @@ export const kids=[
           articleName: "White Kids Bag FR4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
           
       },
       {
@@ -18,7 +18,7 @@ export const kids=[
           articleName: "Skpink Casual Kids Bag FR7883",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -29,7 +29,7 @@ export const kids=[
           articleName: "Pink Casual Kids Bag FR5117",
           originalPrice: "Rs4,500",
           discountedPrice: "Rs2,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -40,7 +40,7 @@ export const kids=[
           articleName: "Girls White Formal Moccasin FR4981",
           originalPrice: "Rs4,500",
           discountedPrice: "Rs1,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -51,7 +51,7 @@ export const kids=[
           articleName: "Girls Golden Formal Moccasin KD4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs2,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -62,7 +62,7 @@ export const kids=[
           articleName: "Black Casual Kids Bag PG1373",
           originalPrice: "Rs1,500",
           discountedPrice: "Rs 800",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -73,7 +73,7 @@ export const kids=[
           articleName: "Ferozy Casual Kids Bag PR7910",
           originalPrice: "Rs2,500",
           discountedPrice: "Rs1,715",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -84,7 +84,7 @@ export const kids=[
           articleName: "Skpink Casual Kdis Bag PW4881",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs1,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -95,7 +95,7 @@ export const kids=[
           articleName: "Pink Casual Kdis Bag DF4881",
           originalPrice: "Rs5,500",
           discountedPrice: "Rs4,208",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -106,7 +106,7 @@ export const kids=[
           articleName: "White Kids Shoes PH4981",
           originalPrice: "Rs2,800",
           discountedPrice: "Rs1,915",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -117,7 +117,7 @@ export const kids=[
           articleName: "Yellow Casual Kids shoes KD7653",
           originalPrice: "Rs2,500",
           discountedPrice: "Rs1,415",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
       {
@@ -128,7 +128,7 @@ export const kids=[
           articleName: "Pink Casual Kids Bag P97157",
           originalPrice: "Rs3,500",
           discountedPrice: "Rs 2,250",
-          descrption:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
+          description:"Kids, short for children, are young human beings typically aged between infancy and adolescence. This stage of human development is characterized by significant physical, cognitive, emotional, and social growth.          "
 
       },
 
