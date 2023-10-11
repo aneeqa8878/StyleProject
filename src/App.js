@@ -25,6 +25,11 @@ import "react-toastify/dist/ReactToastify.css";
 import Modal from "./components/Modal";
 import Admin from "./components/Admin";
 import Quries from "./components/Quries";
+import Users from "./components/Users";
+import DbProducts from "./components/DbProducts";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import ProductForm from "./components/ProductForm";
 
 
 
@@ -32,12 +37,14 @@ function App() {
   const currentPath = window.location.pathname;
   return (
     <>
-     {currentPath !== "/admin" ? (
+      {currentPath !== "/admin" ? (
         <>
           <Prenav />
           <Navbar />
         </>
-      ) : <Admin/>}
+      ) : (
+        <Admin />
+      )}
       <ToastContainer
         position="top-left"
         autoClose={1000}
@@ -52,8 +59,13 @@ function App() {
       />
 
       <Routes>
-      <Route path="/admin" element={<Admin />}></Route>
-      <Route path="/quries" element={<Quries />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/admin" element={<Admin />}></Route>
+        <Route path="/quries" element={<Quries />}></Route>
+        <Route path="/users" element={<Users />}></Route>
+        <Route path="/dbproducts" element={<DbProducts />}></Route>
+        <Route path="/productform" element={<ProductForm />}></Route>
         <Route path="/" element={<Slider />}></Route>
         <Route path="/sale" element={<Sale />}></Route>
         <Route path="/cards" element={<Cards />}></Route>

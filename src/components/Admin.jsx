@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DbProducts from './DbProducts';
 
 function Admin() {
   return (
@@ -16,7 +17,7 @@ function Admin() {
             </Link>
           </div>
           <div class="col-sm">
-            <Link class="nav-link">
+            <Link class="nav-link" to="/login">
               <b>Users</b>
             </Link>
           
@@ -28,8 +29,8 @@ function Admin() {
           
           </div>
           <div class="col-sm">
-            <Link class="nav-link">
-              <b>Products</b>
+            <Link class="nav-link" to="/dbproducts">
+              <b>DbProducts</b>
             </Link>
           </div>
         </div>

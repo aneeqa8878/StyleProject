@@ -4,6 +4,7 @@ require("dotenv").config();
 const app = express();
 const connect = require("./config");
 const userRoute = require("./routes/user.routes");
+
 var bodyParser = require("body-parser");
 var cors = require("cors");
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 connect();
 
 app.use("/users", userRoute);
+
 
 //app.get("/",(req,res)=>{
 // res.json({message:"hello from server", status:200,success:true})

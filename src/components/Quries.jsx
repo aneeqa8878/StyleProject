@@ -1,45 +1,43 @@
-import axios from 'axios'
-import React,{useState,useEffect} from 'react'
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 
 function Quries() {
-    const [queries,setQueries]=useState([])
-const getQuery=async()=>{
-    const response=await axios.get("http://localhost:8000/users")
-    setQueries(response.data.users)
-}
+  const [queries, setQueries] = useState([]);
+  const getQuery = async () => {
+    const response = await axios.get("http://localhost:8000/users");
+    setQueries(response.data.users);
+  };
 
-    useEffect(()=>{
-getQuery();
-    },[])
-    console.log(queries);
+  useEffect(() => {
+    getQuery();
+  }, []);
+  console.log(queries);
   return (
     <div>
       <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Subject</th>
-      <th scope="col">Message</th>
-    </tr>
-  </thead>
-  <tbody>
-  {queries.map((item)=>{
-    return(
-    <tr>
-      <th scope="row">{item.name}</th>
-      <td>{item.email}</td>
-      <td>{item.subject}</td>
-      <td>{item.message}</td>
-    </tr>
-    )
-
-  })}
-       
-  </tbody>
-</table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          {queries.map((item) => {
+            return (
+              <tr>
+                <th scope="row">{item.name}</th>
+                <td>{item.email}</td>
+                <td>{item.subject}</td>
+                <td>{item.message}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Quries
+export default Quries;

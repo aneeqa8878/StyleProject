@@ -28,7 +28,7 @@ function ContactUs() {
   const { name,email,subject,message } = data;
 
   return (
-    <div className="container mb-4">
+    <div className="container  mb-4">
       <h2 class="h1-responsive font-weight-bold text-center my-4">
         Contact us
       </h2>{" "}
