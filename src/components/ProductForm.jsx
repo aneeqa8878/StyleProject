@@ -1,50 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import axios from "axios";
-import ProductDetails from './ProductDetails';
 
 function ProductForm() {
   const [productData, setProductData] = useState({
-    productName: '',
-    articleName:"",
-    discountedPercen: '',
-    originalPrice: '',
-    discountedPrice: '',
-  
+    productName: "",
+    articleName: "",
+    discountedPercen: "",
+    originalPrice: "",
+    discountedPrice: "",
   });
   const onSubmit = async (e) => {
     e.preventDefault();
-    const user=await axios.post("http://localhost:8000/products",productData)
+    const user = await axios.post("http://localhost:8000/users", productData);
     setProductData({
       productName: "",
-      articleName:"",
+      articleName: "",
       discountedPercen: "",
       originalPrice: "",
       discountedPrice: "",
-    })
+    });
   };
 
-
- 
-
   const handleChange = (e) => {
-    
-    setProductData ((prevData)=>({
+    setProductData((prevData) => ({
       ...prevData,
       [e.target.name]: e.target.value,
     }));
   };
-  const {productName,articleName,discountedPercen,originalPrice,discountedPrice}=productData
-
-
-    
-  
+  const {
+    productName,
+    articleName,
+    discountedPercen,
+    originalPrice,
+    discountedPrice,
+  } = productData;
 
   return (
     <div className="container mb-4">
-    <h2 class="h1-responsive font-weight-bold text-center my-2 mx-4">
-      ProductDetails
-    </h2>{" "}
-          <div class="row-responsive mt-4 my-2 mx-2">
+      <h2 class="h1-responsive font-weight-bold text-center my-2 mx-4">
+        ProductDetails
+      </h2>{" "}
+      <div class="row-responsive mt-4 my-2 mx-2">
         <div class="col-md-9 mb-md-0 mb-5">
           <form onSubmit={onSubmit}>
             <div class="row">
@@ -64,7 +60,7 @@ function ProductForm() {
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <label for="articleName" class="">
-                  ArticleName
+                    ArticleName
                   </label>
                   <input
                     type="text"
@@ -79,7 +75,7 @@ function ProductForm() {
               <div class="col-md-12">
                 <div class="md-form mb-0">
                   <label for="discountedPercen" class="">
-                  DiscountedPercen
+                    DiscountedPercen
                   </label>
                   <input
                     type="text"
@@ -94,7 +90,7 @@ function ProductForm() {
               <div class="col-md-12">
                 <div class="md-form mb-0">
                   <label for="originalPrice" class="">
-                  OriginalPrice
+                    OriginalPrice
                   </label>
                   <input
                     type="text"
@@ -109,7 +105,7 @@ function ProductForm() {
               <div class="col-md-12">
                 <div class="md-form mb-0">
                   <label for="discountedPrice" class="">
-                  Discount Price
+                    Discount Price
                   </label>
                   <input
                     type="text"
@@ -120,12 +116,11 @@ function ProductForm() {
                 </div>
               </div>
             </div>
-        
+
             <div class=" text-md-left mt-2">
-            <button class="btn btn-primary">Send</button>
-          </div>
+              <button class="btn btn-primary">Send</button>
+            </div>
           </form>
-          
         </div>
       </div>
     </div>

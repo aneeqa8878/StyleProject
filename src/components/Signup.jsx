@@ -12,7 +12,7 @@ function Signup() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const signup = await axios.post("http://localhost:8000/", data);
+    const user = await axios.post("http://localhost:8000/signup", data);
     setData({
       name: "",
       email: "",

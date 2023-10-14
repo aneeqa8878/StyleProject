@@ -30,6 +30,8 @@ import DbProducts from "./components/DbProducts";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProductForm from "./components/ProductForm";
+import UpdateUser from "./components/UpdateUser";
+
 
 
 
@@ -64,6 +66,7 @@ function App() {
         <Route path="/admin" element={<Admin />}></Route>
         <Route path="/quries" element={<Quries />}></Route>
         <Route path="/users" element={<Users />}></Route>
+        <Route path="/edit/:id" element={<UpdateUser />}></Route>
         <Route path="/dbproducts" element={<DbProducts />}></Route>
         <Route path="/productform" element={<ProductForm />}></Route>
         <Route path="/" element={<Slider />}></Route>

@@ -17,7 +17,7 @@ function Admin() {
             </Link>
           </div>
           <div class="col-sm">
-            <Link class="nav-link" to="/login">
+            <Link class="nav-link" to="/users">
               <b>Users</b>
             </Link>
           

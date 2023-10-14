@@ -6,7 +6,8 @@ const controller=require("../controller/user.controller")
 router.post("/",controller.store)
 router.get("/",controller.index)
 router.get("/:id",controller.get)
-router.delete("/:id",controller.destroy)
+router.delete("/:id",controller.delete)
+router.put("/:id",controller.update)
 
 
 module.exports=router

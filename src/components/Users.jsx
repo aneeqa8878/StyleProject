@@ -1,28 +1,17 @@
 import axios from "axios";
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from "react";
 
 function Users() {
-    const [users,setUsers]=useState([])
-    const [loading,setLoading]=useState(true);
-    const getUser= async()=>{
-      try{
-        const response = await axios.get("http://localhost:8000/api/users");
-        setUsers(response.data.users)
-        setLoading(false);
-      }
-      catch(error){
-        console.error("Error fetching data", error)
-        setLoading(false)
-      }
-        
-    }
-    useEffect(()=>{
-        getUser()
-    },[])
-if(loading){
-  return<div>Loading...</div>
-}
+  const [users, setUsers] = useState([]);
+
+  const getUser = async () => {
+    const response = await axios.get("http://localhost:8000/users");
+    setUsers(response.data.users);
+  };
+  useEffect(() => {
+    getUser();
+  }, []);
+
   return (
     <div>
       <table class="table">
@@ -35,20 +24,17 @@ if(loading){
           </tr>
         </thead>
         <tbody>
-            {users.map((item,index)=>{
-              
-                <tr key={index}>
-                <th scope="row">{item.name}</th>
-                <td>{item.email}</td>
-                <td>{item.password}</td>
-               
-              </tr>
-                
-            })}
+          {users.map((item) => {
+            <tr>
+              <th scope="row">{item.name}</th>
+              <td>{item.email}</td>
+              <td>{item.password}</td>
+            </tr>;
+          })}
         </tbody>
-        </table>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Users
+export default Users;

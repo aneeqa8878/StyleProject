@@ -1,7 +1,17 @@
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
-import React, { useState } from "react";
 
-function ContactUs() {
+function UpdateUser() {
+  const { id } = useParams();
+  const fetchData = async () => {
+    const response = await axios.get(`http://localhost:8000/user/${id}`);
+    console.log(response.data);
+  };
+  useEffect(() => {
+    fetchData();
+  });
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -108,4 +118,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default UpdateUser;

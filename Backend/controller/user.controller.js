@@ -30,7 +30,7 @@ res.json({status:200,message:"Data Fetched Successfully",user})
 console.log(err)
     }
 }
-exports.destroy=async(req,res)=>{
+exports.delete=async(req,res)=>{
     try{
         
 const user=await User.findOneAndRemove({_id:req.params.id});
@@ -39,6 +39,20 @@ if(!user){
     res.json({message:"user not found"})
 }
 res.json({status:200,message:"Data delete Successfully"})
+    }
+    catch(err){
+console.log(err)
+    }
+}
+exports.update=async(req,res)=>{
+    try{
+        
+const user=await User.findOneAndUpdate({_id:req.params.id},req.body,{new:true});
+
+if(!user){
+    res.json({message:"user not found"})
+}
+res.json({status:200,message:"Data updated Successfully",user})
     }
     catch(err){
 console.log(err)
