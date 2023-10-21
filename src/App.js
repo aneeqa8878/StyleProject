@@ -39,6 +39,7 @@ function App() {
   const currentPath = window.location.pathname;
   return (
     <>
+    
       {currentPath !== "/admin" ? (
         <>
           <Prenav />

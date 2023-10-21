@@ -11,6 +11,26 @@ exports.store=async(req,res)=>{
  console.log(err)
    }
 }
+exports.save=async(req,res)=>{
+    try{
+     const payload=req.body;
+     const product=await Product.create(payload)
+     res.json({message:"User Created Successfully",status:200,product})
+    }
+    catch(err){
+  console.log(err)
+    }
+ }
+ exports.savesignup=async(req,res)=>{
+    try{
+     const payload=req.body;
+     const signup=await Signup.create(payload)
+     res.json({message:"User Created Successfully",status:200,signup})
+    }
+    catch(err){
+  console.log(err)
+    }
+ }
 exports.index=async(req,res)=>{
     try{
 const users=await User.find().sort({createdAt:-1});
@@ -25,6 +45,15 @@ exports.get=async(req,res)=>{
     try{
 const user=await User.findOne({_id:req.params.id});
 res.json({status:200,message:"Data Fetched Successfully",user})
+    }
+    catch(err){
+console.log(err)
+    }
+}
+exports.get=async(req,res)=>{
+    try{
+const product=await Product.findOne({_id:req.params.id});
+res.json({status:200,message:"Data Fetched Successfully",product})
     }
     catch(err){
 console.log(err)
@@ -58,3 +87,5 @@ res.json({status:200,message:"Data updated Successfully",user})
 console.log(err)
     }
 }
+
+  

@@ -4,18 +4,22 @@ import { Link } from "react-router-dom";
 
 function Signup() {
   const [data, setData] = useState({
-    name: "",
+    fname: "",
+    lname: "",
     email: "",
+    phone: "",
     password: "",
     confirmpassword: "",
   });
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const user = await axios.post("http://localhost:8000/signup", data);
+    const user = await axios.post("http://localhost:8000/users", data);
     setData({
-      name: "",
+      fname: "",
+      lname: "",
       email: "",
+      phone: "",
       password: "",
       confirmpassword: "",
     });
@@ -26,100 +30,119 @@ function Signup() {
       [e.target.name]: e.target.value,
     }));
   };
-  const { name, email, password, confirmpassword } = data;
+  const { fname, lname, email, phone, password, confirmpassword } = data;
   return (
     <div>
-      <section
-        class="vh-100 bg-image"
-        style={{
-          backgroundimage:
-            "url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');",
-        }}
-      >
-        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-          <div class="container h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100 mt-4">
-              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                <div class="card" style={{ color: "black" }}>
-                  <div class="card-body p-2 ml-3">
-                    <h2 class="text-uppercase text-center mb-2">
-                      Create an account
-                    </h2>
+      <section class="vh-100 gradient-custom">
+        <div class="container py-1 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+            <div className="card shadow-2-strong card-registration" style={{ borderRadius: "15px", background: "rgba(255, 255, 255, 0.8)", backdropFilter: "blur(10px)" }}>
+                <div class="card-body p-2 p-md-5">
+                  <h2 class="mb-4 pb-2 pb-md-0 mb-md-5">SignUp Form</h2>
+                  <form onSubmit={onSubmit}>
+                    <div class="row">
+                      <div class="col-md-6 mb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="firstName">
+                            First Name
+                          </label>
+                          <input
+                            type="text"
+                            name="fname"
+                            value={fname}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="lastName">
+                            Last Name
+                          </label>
+                          <input
+                            type="text"
+                            name="lname"
+                            value={lname}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                    </div>
 
-                    <form onSubmit={onSubmit}>
-                      <div class="form-outline mb-2 ml-1">
-                        <label class="name">Your Name</label>
-                        <input
-                          type="text"
-                          name="name"
-                          value={name}
-                          onChange={handleChange}
-                        />
+                    <div class="row">
+                      <div class="col-md-6 mb-2 pb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="emailAddress">
+                            Email
+                          </label>
+                          <input
+                            type="email"
+                            name="email"
+                            value={email}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
                       </div>
+                      <div class="col-md-6 mb-2 pb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="phoneNumber">
+                            Phone Number
+                          </label>
+                          <input
+                            type="tel"
+                            name="phone"
+                            value={phone}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="password">
+                            Password
+                          </label>
+                          <input
+                            type="password"
+                            name="password"
+                            value={password}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="confirmPassword">
+                            Confirm Password
+                          </label>
+                          <input
+                            type="password"
+                            name="confirmpassword"
+                            value={confirmpassword}
+                            class="form-control form-control-lg"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                    </div>
 
-                      <div class="form-outline mb-2">
-                        <label class="email">Your Email</label>
-                        <input
-                          type="text"
-                          name="email"
-                          value={email}
-                          onChange={handleChange}
-                        />
-                      </div>
-
-                      <div class="form-outline mb-2">
-                        <label class="password">Password</label>
-                        <input
-                          type="text"
-                          name="password"
-                          value={password}
-                          onChange={handleChange}
-                        />
-                      </div>
-
-                      <div class="form-outline mb-2">
-                        <label class="confirmpassword">
-                          Repeat your password
-                        </label>
-                        <input
-                          type="text"
-                          name="confirmpassword"
-                          value={confirmpassword}
-                          onChange={handleChange}
-                        />
-                      </div>
-
-                      <div class="">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label mx-1 ">
-                          I agree all statements in{" "}
-                          <a href="#!" class="text-body">
-                            <u>Terms of service</u>
-                          </a>
-                        </label>
-                      </div>
-
-                      <div class="d-flex justify-content-center">
-                        <button className="button2">Register</button>
-                      </div>
-                      <div>
-                        {" "}
-                        <p class="text-center text-muted mt-2 mb-1">
-                          Have already an account?{" "}
-                          <Link
-                            class="fw-bold text-body"
-                            to={`/successregister`}
-                          >
-                            <u>Login here</u>
-                          </Link>
-                        </p>
-                      </div>
-                    </form>
-                  </div>
+                    <div class="mt-4 pt-2">
+                      <input class="button3" type="submit" value="Submit" />
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2 mt-2">Already have an account?</p>
+                      <Link class="fw-bold text-body mt-2" to={`/login`}>
+                        <u>Login Here</u>
+                      </Link>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
